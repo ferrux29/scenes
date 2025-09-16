@@ -15,7 +15,7 @@ export default async function handler(req, res) {
   else if ((mins >= 1430 && mins <= 1440) || (mins >= 0 && mins < 10)) scene = '7.png'; // 23:50–00:10
 
   const host = req.headers.host;
-  const url = `https://${host}/scenes/${scene}`; // sirve desde /public/scenes
+  const url = `https://raw.githubusercontent.com/ferrux29/scenes/main/public/scenes/${scene}`;
   const r = await fetch(url);
   const buf = Buffer.from(await r.arrayBuffer());
 
