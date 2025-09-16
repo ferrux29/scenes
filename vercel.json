@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "functions": {
+    "api/**/*.js": { "runtime": "nodejs18.x" }
+  },
+  "routes": [
+    { "src": "/api/scenes", "dest": "/api/scenes.js" },
+    { "src": "/api", "dest": "/api/scenes.js" }
+  ]
+}
